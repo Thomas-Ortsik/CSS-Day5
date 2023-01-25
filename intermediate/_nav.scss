@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+body{
+    overflow-x: visible;
+}
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    background-color: $c-primary;
+    height: 5vh;
+    overflow: hidden;
+    img {
+        background-color: $c-secondary;
+        height: 8vh;
+        padding-left: 5px;
+        margin-bottom: -30px;
+    }
+    a {
+        box-sizing: border-box;
+        padding: 0 20px 0 20px;
+        height: 5vh;
+        font-family:Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: $c-secondary;
+        font-size: 1.2em;
+
+        background: linear-gradient($c-secondary 0 0) no-repeat;
+        background-size: 200% 0.1rem;
+        background-position: 200% 100%;
+        transition: background-size .4s, background-position .4s .4s;
+        
+        &:hover {
+            color: $c-highligh2;
+            background-size: 200% 100%;
+            background-position: 100% 100%;
+            transition: background-size .2s .2s, background-position .2s; 
+        }
+        p {
+            position: relative;
+            top: 3vh
+        }
+    }
+}

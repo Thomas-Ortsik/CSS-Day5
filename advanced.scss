@@ -1,0 +1,35 @@
+@import "intermediate";
+
+@media screen and (min-width: 800px) {
+    .photoalbum {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .photoalbum {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.photoalbum {
+    display: grid;
+    justify-content: center;
+    div {
+        width: 400px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 20px;
+        margin: 10px;
+
+        transition: all 0.2s;
+            &:hover{
+                transform: scale(1.1);
+                overflow: visible;
+                z-index: 1;
+            }
+        img {
+            max-width: 400px;
+        }
+
+    }
+}
