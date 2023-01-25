@@ -26,9 +26,11 @@
                 transform: scale(1.1);
                 overflow: visible;
                 z-index: 1;
+                
             }
         img {
             max-width: 400px;
+            box-shadow: 3px 3px 100px black;
         }
 
     }

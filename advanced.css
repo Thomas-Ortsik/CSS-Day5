@@ -55,11 +55,6 @@ body {
   align-items: flex-end;
 }
 
-.home {
-  grid-template-columns: repeat(2, 40%);
-  background-color: rgb(255, 255, 255);
-}
-
 main {
   display: grid;
   justify-content: center;
@@ -70,6 +65,15 @@ main p {
   padding: 10px;
   margin: 10px;
   color: rgb(0, 0, 0);
+}
+
+.home {
+  grid-template-columns: repeat(2, 40%);
+  background-color: rgb(255, 255, 255);
+}
+.home img {
+  border-radius: 20px;
+  margin: 10px;
 }
 
 @media screen and (min-width: 800px) {
@@ -101,4 +105,5 @@ main p {
 }
 .photoalbum div img {
   max-width: 400px;
+  box-shadow: 3px 3px 100px black;
 }/*# sourceMappingURL=advanced.css.map */
